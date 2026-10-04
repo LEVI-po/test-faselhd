@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 const BASE_URL = "https://www.faselhds.biz";
 
