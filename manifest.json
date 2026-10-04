@@ -1,6 +1,6 @@
 {
   "name": "FaselHD",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "FaselHD Arabic movies and TV series",
   "author": "LEVI-po",
   "scrapers": [
@@ -8,13 +8,13 @@
       "id": "faselhd",
       "name": "FaselHD",
       "description": "FaselHD Arabic movies and TV series",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "author": "LEVI-po",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "filename": "providers/faselhd3.js"
+      "filename": "providers/faselhd3.js",
       "enabled": true,
       "formats": [
         "mp4",
