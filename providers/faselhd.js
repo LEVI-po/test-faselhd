@@ -21,7 +21,7 @@ async function getStreams(tmdbId, type, season, episode) {
     return [
       {
         name: "FaselHD",
-        title: `FaselHD HTTP ${response.status}`,
+        title: "VERSION 1.0.1 TEST",
         url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
         quality: 1080,
         type: "video"
