@@ -1,10 +1,9 @@
-"use strict"
+"use strict";
 
 const BASE_URL = "https://www.faselhds.biz";
 
 async function getStreams(tmdbId, type, season, episode) {
   try {
-    // الحصول على اسم الفيلم من Cinemeta
     const metaUrl =
       `https://v3-cinemeta.strem.io/meta/movie/${tmdbId}.json`;
 
@@ -24,7 +23,6 @@ async function getStreams(tmdbId, type, season, episode) {
       return [];
     }
 
-    // البحث في FaselHD
     const searchUrl =
       `${BASE_URL}/?s=${encodeURIComponent(title)}`;
 
@@ -42,7 +40,6 @@ async function getStreams(tmdbId, type, season, episode) {
 
     console.log("[FaselHD] HTML:", html.length);
 
-    // اختبار فقط: إذا وصلنا لصفحة البحث
     return [
       {
         name: "FaselHD",
