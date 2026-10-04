@@ -3,14 +3,9 @@
 const BASE_URL = "https://www.faselhds.biz";
 
 async function getStreams(tmdbId, type, season, episode) {
-  console.log("[FaselHD] START");
-  console.log("[FaselHD] TMDB:", tmdbId);
-  console.log("[FaselHD] TYPE:", type);
-
   try {
-    const url = `${BASE_URL}/?s=test`;
-
-    const response = await fetch(url);
+    const testUrl = `${BASE_URL}/?s=test`;
+    const response = await fetch(testUrl);
 
     console.log("[FaselHD] HTTP:", response.status);
 
@@ -20,19 +15,20 @@ async function getStreams(tmdbId, type, season, episode) {
 
     const html = await response.text();
 
-    console.log("[FaselHD] HTML:", html.length);
+    console.log("[FaselHD] HTML LENGTH:", html.length);
 
+    // نرجع Stream تجريبي فقط إذا الموقع رد
     return [
       {
-        name: "FaselHD TEST",
-        title: "FaselHD connection OK",
+        name: "FaselHD",
+        title: `FaselHD HTTP ${response.status}`,
         url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
         quality: 1080,
         type: "video"
       }
     ];
-  } catch (error) {
-    console.log("[FaselHD] ERROR:", error.message);
+  } catch (e) {
+    console.log("[FaselHD] ERROR:", String(e));
     return [];
   }
 }
