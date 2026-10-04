@@ -14,7 +14,7 @@
         "movie",
         "tv"
       ],
-      "filename": "providers/faselhd2.js",
+      "filename": "providers/faselhd3.js"
       "enabled": true,
       "formats": [
         "mp4",
