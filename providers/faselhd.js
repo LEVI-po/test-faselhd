@@ -1,4 +1,5 @@
 "use strict";
+console.log("[FaselHD] TEST START");
 
 const BASE_URL = "https://www.faselhds.biz";
 const ALT_URL = "https://faselhd.club";
