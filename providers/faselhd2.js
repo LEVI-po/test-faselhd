@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const BASE_URL = "https://www.faselhds.biz";
 
@@ -49,7 +49,6 @@ async function getStreams(tmdbId, type, season, episode) {
         type: "video"
       }
     ];
-
   } catch (e) {
     console.log("[FaselHD] ERROR:", String(e));
     return [];
