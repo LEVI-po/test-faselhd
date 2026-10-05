@@ -3,10 +3,10 @@
 async function getStreams(tmdbId, type, season, episode) {
   return [
     {
-      name: "FaselHD DEBUG",
-      title: `ID=${tmdbId} TYPE=${type} S=${season} E=${episode}`,
-      url: "https://example.com/test.mp4",
-      quality: 1080,
+      name: "Authorized Source",
+      title: `ID=${tmdbId} | TYPE=${type} | S=${season} | E=${episode}`,
+      url: "https://fastvid.cam/stream/fOCjbgY3ksKpulVK-c9DOw/hjkrhuihghfvu/1791204691/36067988/index-f3-v1-a1.m3u8",
+      quality: 360,
       type: "video"
     }
   ];
