@@ -1,6 +1,6 @@
 "use strict";
 
-const BASE_URL = "https://www.faselhds.biz";
+const BASE_URL = "https://faselhd.club";
 
 async function getStreams(tmdbId, type, season, episode) {
   try {
