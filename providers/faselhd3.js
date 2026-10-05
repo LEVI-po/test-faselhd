@@ -12,7 +12,7 @@ async function getStreams(tmdbId, type, season, episode) {
     {
       name: "Arabic Audio",
       title: "Arabic Audio",
-      url: "YOUR_ARABIC_AUDIO_MP3",
+      url: "https://www.dimakids.com/audio/1405893794.mp3",
       type: "audio"
     }
   ];
