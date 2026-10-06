@@ -1,28 +1,37 @@
 {
-  "name": "FaselHD",
-  "version": "1.0.3",
-  "description": "FaselHD Arabic movies and TV series",
-  "author": "LEVI-po",
-  "scrapers": [
+  "id": "com.black.nuvio.content",
+  "version": "1.0.0",
+  "name": "Black Content",
+  "description": "Content catalog and metadata addon for Nuvio",
+  "resources": [
+    "catalog",
+    "meta"
+  ],
+  "types": [
+    "movie",
+    "series"
+  ],
+  "catalogs": [
     {
-      "id": "faselhd",
-      "name": "FaselHD",
-      "description": "FaselHD Arabic movies and TV series",
-      "version": "1.0.3",
-      "author": "LEVI-po",
-      "supportedTypes": [
-        "movie",
-        "tv"
-      ],
-      "filename": "providers/faselhd3.js",
-      "enabled": true,
-      "formats": [
-        "mp4",
-        "mkv",
-        "m3u8"
-      ],
-      "contentLanguage": [
-        "ar"
+      "type": "movie",
+      "id": "black-movies",
+      "name": "Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "black-series",
+      "name": "Series",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
       ]
     }
   ]
